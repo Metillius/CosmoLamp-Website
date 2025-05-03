@@ -1,0 +1,41 @@
+.gradient-background {
+    background: linear-gradient(300deg, #ff0037, #21c444, #440139);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  /* White left arrow */
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M4.854 1.146a.5.5 0 0 1 0 .708L2.707 4l2.147 2.146a.5.5 0 0 1-.708.708l-2.5-2.5a.5.5 0 0 1 0-.708l2.5-2.5a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+  }
+  
+  /* White right arrow */
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M3.146 1.146a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L5.293 4 3.146 1.854a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  }
+  
+  .carousel-image {
+    height: 300px;           /* or your preferred height */
+    width: 600px;            /* or your preferred width */
+    object-fit: cover;
+  }
